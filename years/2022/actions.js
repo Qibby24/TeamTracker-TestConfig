@@ -27,6 +27,6 @@ var actions = {
     array.split(", ").forEach(loc => {
       locations.add(loc)
     })
-    return locations
+    return Array.from(locations).join(", ");
   } 
 }
