@@ -25,8 +25,7 @@ var actions = {
   robotShootLocations: (array) => {
     console.log(array)
     return Array.from(array.reduce((prev, curr) => {
-      //return new Set(prev.split(",").concat(curr.split(", ")))
-      return null
+      return new Set(prev.concat(curr.split(", "))
     }, []))
   } 
 }
