@@ -23,9 +23,10 @@ var actions = {
   },
   averagePerMatchStr: (array) => actions.averagePerMatch(array),
   robotShootLocations: (array) => {
+    console.log(array)
     return Array.from(array.reduce((prev, curr) => {
-      console.log(curr)
-      return new Set(prev.split(",").concat(curr.split(", ")))
+      //return new Set(prev.split(",").concat(curr.split(", ")))
+      return null
     }, []))
   } 
 }
