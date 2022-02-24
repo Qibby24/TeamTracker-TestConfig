@@ -113,10 +113,10 @@
       "action": null
     },
     {
-     "id": "robotShootLocation",
+     "id": "robotShootLocations",
       "tableColumn" : [11],
       "type": "string",
-      "action": null
+      "action": "robotShootLocations"
     }
   ],
 
@@ -159,6 +159,10 @@
       {
         "title": "Higher Hub Average (Teleop)",
         "id": "teleopHigherHubScoredAverageStr"
+      },
+      {
+        "title": "Shooting Locations",
+        "id": "robotShootLocations"
       }
     ],
     "table": [
@@ -185,10 +189,6 @@
       {
         "title": "Robot Break",
         "id": "robotBreak"
-      },
-      {
-        "title": "Shooting Location",
-        "id": "robotShootLocation"
       }
     ],
     "tableFooter": [
