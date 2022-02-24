@@ -26,7 +26,7 @@ var actions = {
     console.log(array)
     return Array.from(
       new Set(array.reduce((prev, curr) => {
-        return Array.from(prev).concat(curr)
+        return (Array.isArray(prev) ? prev : prev.split(", ")).concat(curr)
       }, []))
     ).join(", ")
   } 
