@@ -21,5 +21,12 @@ var actions = {
     var average = actions.sum(array) / array.length
     return !Number.isNaN(average) ? average.toFixed(2) : 0
   },
-  averagePerMatchStr: (array) => actions.averagePerMatch(array)
+  averagePerMatchStr: (array) => actions.averagePerMatch(array),
+  robotShootLocations: (array) => {
+    const locations = new Set()
+    array.split(", ").forEach(loc => {
+      locations.add(loc)
+    })
+    return locations
+  } 
 }
