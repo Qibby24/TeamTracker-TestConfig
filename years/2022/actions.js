@@ -26,6 +26,6 @@ var actions = {
     console.log(array)
     return Array.from(array.reduce((prev, curr) => {
       return new Set(prev.concat(curr))
-    }, [])))
+    }, []))
   } 
 }
